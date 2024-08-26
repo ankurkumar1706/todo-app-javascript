@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO javaScript App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-teal-950 pt-10">
+    <div class="container max-w-lg mx-auto p-5">
+      <div
+        class="flex text-white justify-between border-2 border-teal-200 p-8 rounded-2xl"
+      >
+        <div>
+          <div>
+            <h1 class="text-5xl">Todo Done</h1>
+            <p>Keep It Up</p>
+          </div>
+          <div class="mt-10">
+            <div
+              class="w-full bg-teal-100 rounded-full h-4 mb-4 dark:bg-gray-700"
+            >
+              <div
+                class="bg-teal-400 h-4 rounded-full dark:bg-blue-500"
+                style="width: 45%"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-teal-900 h-32 w-32 flex items-center justify-center rounded-full"
+        >
+          <div class="text-5xl text-white">1 / 2</div>
+        </div>
+      </div>
+
+      <form class="flex justify-center items-center gap-4 mt-10" action="">
+        <input
+          id="taskInput"
+          class="bg-teal-900 h-12 rounded border border-teal-200 p-4 w-full outline-0 text-white"
+          type="text"
+          placeholder="Write your task"
+        />
+        <button
+          class="text-4xl text-white h-12 w-12 bg-teal-400 rounded-full leading-1 flex-none"
+          type="submit"
+        >
+          +
+        </button>
+      </form>
+      <ul class="task-list mt-10">
+        <li
+          class="task-item flex items-center gap-4 bg-white px-4 py-2 rounded"
+        >
+          <input type="checkbox" />
+          <div class="taskText flex-1">task text</div>
+          <div class="icons flex">
+            <button class="w-9 p-2"><img src="edit.png" alt="" /></button>
+            <button class="w-9 p-2"><img src="delete.png" alt="" /></button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
