@@ -6,6 +6,12 @@
     <title>TODO javaScript App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <style>
+    .task.completed {
+      text-decoration: line-through;
+      color: teal;
+    }
+  </style>
   <body class="bg-teal-950 pt-10">
     <div class="container max-w-lg mx-auto p-5">
       <div
@@ -41,25 +47,15 @@
           type="text"
           placeholder="Write your task"
         />
-        <button id="addTaskBtn"
+        <button
+          id="addTaskBtn"
           class="text-4xl text-white h-12 w-12 bg-teal-400 rounded-full leading-1 flex-none"
           type="submit"
         >
           +
         </button>
       </form>
-      <ul class="task-list mt-10">
-        <li
-          class="task-item flex items-center gap-4 bg-white px-4 py-2 rounded"
-        >
-          <input type="checkbox" />
-          <div class="taskText flex-1">task text</div>
-          <div class="icons flex">
-            <button class="w-9 p-2"><img src="edit.png" alt="" /></button>
-            <button class="w-9 p-2"><img src="delete.png" alt="" /></button>
-          </div>
-        </li>
-      </ul>
+      <ul id="taskList" class="task-list mt-10"></ul>
     </div>
     <script src="script.js"></script>
   </body>
