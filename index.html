@@ -24,11 +24,13 @@
           </div>
           <div class="mt-10">
             <div
-              class="w-full bg-teal-100 rounded-full h-4 mb-4 dark:bg-gray-700"
+              id="progressBar"
+              class="w-full bg-white rounded-full h-4 mb-4 dark:bg-gray-700"
             >
               <div
+                id="progress"
                 class="bg-teal-400 h-4 rounded-full dark:bg-blue-500"
-                style="width: 45%"
+                style="width: 0"
               ></div>
             </div>
           </div>
@@ -36,7 +38,7 @@
         <div
           class="bg-teal-900 h-32 w-32 flex items-center justify-center rounded-full"
         >
-          <div class="text-5xl text-white">1 / 2</div>
+          <div id="statNumbers" class="text-5xl text-white">0 / 0</div>
         </div>
       </div>
 
@@ -58,5 +60,6 @@
       <ul id="taskList" class="task-list mt-10"></ul>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
   </body>
 </html>
